@@ -27,3 +27,25 @@ Constraints:
  
 
 Follow up: Could you solve it without converting the integer to a string?
+
+public class Solution {
+    public bool IsPalindrome(int x) {
+        // will have to get the lenght of the int thus need to convert it to a string 
+        // x.ToString().Length
+        
+        string myStr = x.ToString();
+        int j = 1;
+
+        for (int i =0; i < myStr.Length; i++)
+        {
+            if (myStr[i] != myStr[myStr.Length - j])
+            {
+                return false;
+                j++;
+            }
+            j++;
+            
+        }
+        return true;
+    }
+}
