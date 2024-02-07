@@ -28,6 +28,11 @@ Constraints:
 
 Follow up: Could you solve it without converting the integer to a string?
 
+//***********************************************************************************************************************************************
+
+//Answer:
+
+
 public class Solution {
     public bool IsPalindrome(int x) {
         // will have to get the lenght of the int thus need to convert it to a string 
